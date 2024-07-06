@@ -107540,3 +107540,11 @@ sg_binaryog_16pack
 gge_ring_soft
 civ_icon_food
 sola_disk
+noise_tex
+ci_diplo_citywalls_large_LOD2
+crg_ring_cuteness
+cr_crgnest_npc_abandoned-physics
+Explosion_2x2
+lightningAnims_4x4
+lightningAnims_4x2
+edit_camera
