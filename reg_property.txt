@@ -5912,3 +5912,7 @@ struct_goldy3
 struct_boosterMed
 struct_chomperRock
 markForests
+duck2curve	0x39139A99
+gaintoggle	0xd29529ec
+exitcurve	0x8dd5daba
+patch	0xA852CBD1
