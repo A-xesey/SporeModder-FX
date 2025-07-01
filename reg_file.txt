@@ -53318,6 +53318,7 @@ OptionCreatureControls~	0x0679B85E
 OptionTribeControls~	0x0679B868
 OptionCivControls~	0x0679B873
 OptionSpaceControls~	0x0679B880
+OptionHighResTextures~	0x08488F95
 auto_assetbrowserfeeditems_Grox
 Grox1
 Grox2
@@ -112947,3 +112948,26 @@ AceCombat
 EC cricket land vehicle
 DoILookLikeImSmiling_
 SG_asteroids
+PlanetImpostorCloud_material
+packedCurves1
+packedCurves2
+normalSampler
+heightSampler
+seabedSampler
+heightTexture
+waterBump0
+waterBump1
+waterBump2
+scatterSampler
+refractionMap
+reflectionSampler
+testplantscolor
+effects-plants
+effects-spiral
+imagertorso
+LabsEditorBudget
+flair
+offense
+utility
+SG_ufo_color_revert_hitground
+SG_ufo_color_revert_hitwater
