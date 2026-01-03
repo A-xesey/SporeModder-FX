@@ -82,6 +82,7 @@ snd	0x42c9cbb
 submix	0x2c9eff2
 voice	0x29e333b
 lvl	0x47b8300
+scn	0x47b8300
 structure	0x4b9ef6dc
 populate	0xda141c1b
 advect	0x4805684
@@ -165,6 +166,8 @@ json	0x0a98eaf0
 er2	0x08068aec
 eapdPixie	0x0330a65e
 mrk	0x2b7df427
+aif	0x01005967
+ltp	0xf2b924b3
 
 kGameData	0x17F243B
 kCheatObject	0x2A37E35
