@@ -122563,6 +122563,7 @@ The Park
 A Death in the Alley
 BusStopBlues
 EC_BaroganHouse1
+BaroganHouse1s
 Barogan Center
 The Saturin
 The Aquanata
@@ -122936,6 +122937,7 @@ Sam Smiles
 Falcon CP250
 Robot Shooter
 AC_EC Land Vehicle
+EC Land Vehicle
 Land Ho
 ac_Samurai
 Samurai
@@ -122958,3 +122960,20 @@ A_Spin
 D_Rotate
 Rotation
 Translate
+NameAndDescribe
+AccessoryEditor
+CRG_AbilityUI
+CSA_Paint_Name
+CSA_Paint_Save
+CSA_Paint_Camera
+CSA_Play_Categories
+CSA_GettingStarted_Categories
+CSA_Welcome_Categories
+CSA_ContentPackInstaller
+CSA_Sporepedia
+CSA_Paint_Categories
+CSA_Part_Categories
+CSA_Play_Camera
+CSA_Sporepedia_Categories
+CSA_Sporepedia_SelectingCreatures
+CSA_Sporepedia_CreatureManagement
