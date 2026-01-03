@@ -122946,3 +122946,15 @@ Ramjet Hornet
 
 editor+animation_runtimeRigblock~	0x41606100
 editor+animation_rigblock~	0x41606000
+
+toefat
+toelength
+toespread
+RotationEffect
+drive
+Raised4
+Droop2
+A_Spin
+D_Rotate
+Rotation
+Translate
