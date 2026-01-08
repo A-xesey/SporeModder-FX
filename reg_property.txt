@@ -5924,3 +5924,24 @@ MaxisFeedColorLocked
 MaxisFeedColorDefault
 NewGameFlowLayout
 UsePhantom
+spaceEconomyMaxRechargeCostNPC	0x057e1655
+spaceEconomyMaxRechargeCostPlayer	0x057e1656
+StealBabyPlans
+GroupID
+modelType
+dnaPointsEvolutionThresholds
+archetypeGenerations
+overrideHeight
+damageMultiplier
+foodValueMultForAlphas
+UsageCount
+animation
+hungerPoints
+markerGroup
+icon
+cardIcon
+inProgressStatusText
+goalNumber
+stanceIconKey
+progressIconWinCommandID
+contentWinCommandID
