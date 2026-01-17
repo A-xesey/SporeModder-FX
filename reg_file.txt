@@ -124001,3 +124001,4 @@ default_look_algorithm
 cell_hero_lay_egg
 cell_weapon_poison_player
 cell_GoldySpecial
+Scary-red-hall

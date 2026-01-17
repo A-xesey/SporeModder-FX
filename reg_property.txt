@@ -6277,3 +6277,9 @@ minTargetPopulation
 maxTargetPopulation
 timeBetweenExecution
 excludeChieftain
+sequenceNumber
+migrationPointRadius
+migrationPointType
+migrationPointLoop
+migrationPointHerdSize
+migrationPointHerdCooldown
