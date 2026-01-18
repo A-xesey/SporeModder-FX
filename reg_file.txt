@@ -124002,3 +124002,18 @@ cell_hero_lay_egg
 cell_weapon_poison_player
 cell_GoldySpecial
 Scary-red-hall
+~	0x811C9DC5
+global_ui_space~	0x0354663B
+sporepedia~	0x02605BA3
+simulator_scripts~	0x024A4F5A
+simulator_scripts_cityPlans~	0x024B4A2F
+personalities~	0x0568DE14
+physics~	0x02A8CB47
+planners~	0xA19B317D
+events~	0x02BB7AFF
+events_cell~	0x96A09156
+events_creature~	0x68DD6929
+events_tribe~	0x182CD6CE
+events_cityCiv~	0xAA9A8ED7
+events_space~	0x131A9F54
+abilities~	0x01B68DB4
