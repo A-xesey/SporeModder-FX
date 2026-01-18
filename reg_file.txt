@@ -124017,3 +124017,14 @@ events_tribe~	0x182CD6CE
 events_cityCiv~	0xAA9A8ED7
 events_space~	0x131A9F54
 abilities~	0x01B68DB4
+space_missions~	0x02AE1A8E
+space_commodities~	0x034D97FA
+space_tools_toolPalettes~	0x30608F0C
+space_tools~	0x30608F0B
+space_tools_panelUI~	0x05F4D5E7
+space_cargoItems~	0x037D494E
+credits~	0x0463D0B7
+editors_scenario~	0x07218951
+ep1_credits~	0x9A76EA1A
+rollover~	0x0199B485
+SpaceGame~	0x02AE0C7E
