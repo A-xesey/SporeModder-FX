@@ -124116,3 +124116,13 @@ tt_chieftan_staff-hull
 tt_chieftan_staff_LOD1
 ep1_coppercoin_hull
 bp1-button-background-on
+cell_leggy
+cell_parasite
+cell_parasiteA
+cell_parasiteB
+cell_parasiteEgg
+cell_poisonEgg
+struct_leggy
+cell_unlock_jaw
+egg_eggbaby
+str_creeperA
