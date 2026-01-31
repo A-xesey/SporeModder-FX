@@ -4780,7 +4780,7 @@ tribeTimeToNewTribe	0x1A09D79E
 startingcellModels	0x578F6AED
 tribeStartingTools	0x860ED457
 upgradeHerdList	0x536F1C37
-ArcheType	0x64AAF64E
+archetype
 NewGameArchetypeFilter	0xF2F72138
 terrainscript	0x66603a49
 scenarioOutfiterCategoryID	0xAD7CDB56
@@ -5013,7 +5013,7 @@ drinkTimes
 EmpireColonyMax
 FirstGroup
 Friction
-olieTurn
+waterVelocityDamping
 p1
 p10
 p11
@@ -6286,3 +6286,45 @@ migrationPointLoop
 migrationPointHerdSize
 migrationPointHerdCooldown
 paletteItemUILayout
+objectsStartActive
+bestFitBBoxThreshold
+allowInstantaneousVelocityChange
+objectLODDeactivationDistance
+spatialObjectDensity
+maxVelocityToDeactivate
+debugDistanceFromCamera
+characterLODDistance
+geyserForce
+geyserForcePushback
+geyserForceCreatures
+geyserRadius
+geyserHeight
+waterDepthDelta
+contactPointSolverIterations
+useObstaclesPhysicsHulls
+maxAllowedPenetration
+waterAngularVelocityDamping
+separationBiasMultiplier
+defaultRestitution
+classId
+collisionMaxDistanceLarge
+collisionMaxDistanceSmall
+collisionMassSmallLargeThreshold
+avatarRelative
+destructedModelStates
+cell_hero_L0
+percentageHealer
+percentageFisherman
+percentageGatherer
+percentageDidgeridude
+percentageMaracan
+percentageHornist
+percentageSpearman
+percentageAxeman
+percentageClubber
+idealSocialScore
+personality
+numSocialRounds
+initialRelationship
+groundCoverKillRate
+effectIsOneshot
