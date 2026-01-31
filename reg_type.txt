@@ -604,3 +604,14 @@ bak2.png	0xDC74130E
 arg	0x2523258
 blockinfo	0x793f6424
 adv	0x366a930d
+
+cTreeData	0x6ABEE7E
+cSummonCreatureEvent	0x609EEDF
+cNightPredatorEvent	0x5599E3B
+cUFOAbductionEvent	0x5599EC7
+cMeteorStrikeEvent	0x5599F00
+cRainStormEvent	0x5599F5A
+cBabyGameEvent	0x5599F34
+cSeaMonsterEvent	0x5599F83
+cCreatureAttackEvent	0x5ed29d9
+cTribeFoodRaidEvent	0x5599d0c
