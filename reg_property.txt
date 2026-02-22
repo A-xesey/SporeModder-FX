@@ -3113,7 +3113,9 @@ timelineEventLayout	0x34E3B684
 modelUseHullForPicking	0x350F8605
 browserAllowSortByTitle	0x352DB4A9
 editorSwatchBackgroundEffect	0x35383C76
+editorPageFilter
 palettePageFilter	0x35919809
+pageLayoutFile
 palettePageLayoutFile	0x35B12C24
 difficultySpaceTradeToolCost	0x35EDC257
 paletteCategorySequenceNumber	0x35EEB8B5
@@ -6328,3 +6330,20 @@ numSocialRounds
 initialRelationship
 groundCoverKillRate
 effectIsOneshot
+MouseWheelUndoTimeMs
+SuggestDegree1
+SuggestDegree2
+SuggestDegree3
+SuggestDegree4
+SuggestDegree5
+SuggestDegree6
+SuggestDegree7
+NextDegree1
+NextDegree2
+NextDegree3
+NextDegree4
+NextDegree5
+NextDegree6
+NextDegree7
+MouseWheelIncrement
+MaxAmbienceLayers
