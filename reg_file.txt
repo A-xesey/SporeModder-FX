@@ -124295,3 +124295,8 @@ skinpaint_coat_blann
 skinpaint_detail_blanz
 ScenarioEditModeGoalItem
 NoGroup_ScenarioEditModeGoalItem-00
+GlobalUIOptions-2
+comm_arrow_up
+Conv_bar_icon_spice
+editor_runtimeRigblock~	0x40606100
+editor+animation_runtimeRigblock~	0x41606100
