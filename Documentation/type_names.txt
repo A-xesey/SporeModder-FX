@@ -21,6 +21,7 @@
 .raster=Creation Rasterized Texture
 .rw4=RenderWare4 Model/Texture/Material
 .lvl=Game Level
+.scn=Game Level
 .lua=Lua Script
 .bem=Binary Editor Model
 .cll=Cell Creation Model
