@@ -124404,3 +124404,8 @@ skinpaint_coat_blann
 skinpaint_detail_blanz
 ScenarioEditModeGoalItem
 NoGroup_ScenarioEditModeGoalItem-00
+GlobalUIOptions-2
+GlobalUICiv3-3
+GlobalUICiv-01
+GlobalUICreature3-7
+GlobalUITribe3-6
