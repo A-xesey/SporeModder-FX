@@ -36,7 +36,7 @@ jobs:
         run: mvn -B package --file pom.xml
 
       - name: Generate release zip
-        run: zip -r "SporeModder FX.zip" "SporeModder FX"
+        run: zip -r "SporeModderFX.zip" "SporeModder FX"
 
       - name: Copy updater
         run: |
@@ -48,7 +48,7 @@ jobs:
           name: SporeModder-FX-Release
           path: |
             SporeModderFX.Updater.jar
-            "SporeModder FX.zip"
+            SporeModderFX.zip
           
   publish_release:
     name: Publish Release
@@ -81,4 +81,4 @@ jobs:
           body_path: changelog.txt
           files: |
             SporeModderFX.Updater.jar
-            SporeModder FX.zip
+            SporeModderFX.zip
