@@ -124286,3 +124286,12 @@ NoGroup_ScenarioEditModeEndText-00
 NoGroup_ScenarioEditModeEndText-01
 ScenarioEditModeIntroText
 NoGroup_ScenarioEditModeIntroText-00
+dialog-left-top-corner-horiz
+dialog-rt-top-corner-horiz
+EP1-paint-ramps-atmosphere2
+tooltips-box-3
+skinpaint_base_blankMattf
+skinpaint_coat_blann
+skinpaint_detail_blanz
+ScenarioEditModeGoalItem
+NoGroup_ScenarioEditModeGoalItem-00
