@@ -55,6 +55,7 @@ import sporemodder.file.rw4.RenderWareConverter;
 import sporemodder.file.shaders.SmtConverter;
 import sporemodder.file.simulator.ScenarioConverter;
 import sporemodder.file.tlsa.TLSAConverter;
+import sporemodder.file.bem.BinaryEditorModelConverter;
 
 /**
  * A class that manages file format conversions. Some basic concepts managed by this class:
@@ -100,6 +101,7 @@ public class FormatManager extends AbstractManager {
 		converters.add(new EffectsConverter());
 		converters.add(new RenderWareConverter());
 		converters.add(new PropConverter());
+		converters.add(new BinaryEditorModelConverter());
 	}
 	
 	/**
