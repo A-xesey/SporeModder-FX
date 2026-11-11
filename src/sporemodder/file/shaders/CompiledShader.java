@@ -49,7 +49,7 @@ public class CompiledShader {
 		return sb.toString();
 	}
 	
-	public void read(StreamReader in) throws IOException {
+	public void read(StreamReader in, Integer version) throws IOException {
 		in.readUBytes(fragmentIndices);
 		//in.readUShorts(fragmentIndices);
 		
@@ -61,13 +61,15 @@ public class CompiledShader {
 			ShaderDataUniform uniform = new ShaderDataUniform();
 			uniform.read(in, false);
 			dataUniforms.add(uniform);
+			if (version < 7) dataFlags = in.readInt();
 		}
 		
-		for (int i = 0; i < count; ++i) {
-			startRegisters.add(in.readInt());
+		if (version > 6) {
+			for (int i = 0; i < count; ++i) {
+				startRegisters.add(in.readInt());
+			}
+			dataFlags = in.readInt();
 		}
-		
-		dataFlags = in.readInt();
 	}
 	
 	public void write(StreamWriter out) throws IOException {
