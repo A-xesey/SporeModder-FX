@@ -62,6 +62,48 @@ public class SummaryFile {
 		ENUM_PARAMETERS.add(0x99524FAF, "editorModelForceSaveOver");
 		ENUM_PARAMETERS.add(0xAE773A29, "editorModelCopyConsequence");
 		ENUM_PARAMETERS.add(0xEC2942CD, "isMyCaptain");
+
+		
+		/// General
+		ENUM_PARAMETERS.add(0x05fb4759, "published");				// kParameterIDPublished
+		ENUM_PARAMETERS.add(0x03cc89b1, "contentType");					// kParameterIDThemeID
+		ENUM_PARAMETERS.add(0x05dc0b88, "contentSource");			// kParameterIDContentSource
+		ENUM_PARAMETERS.add(0x061ef9b1, "timeDownloaded");			// kParameterTimeDownloaded
+		ENUM_PARAMETERS.add(0xcd6e902c, "hasgaprop");				// kParameterIDGAProp
+		ENUM_PARAMETERS.add(0x54a32960, "validation_playable");		// kParameterIDValidationPlayable
+		ENUM_PARAMETERS.add(0x54a32961, "validation_pollinatable");	// kParameterIDValidationPollinatable
+		ENUM_PARAMETERS.add(0x0665f917, "validation_viewableLarge");	// kParameterIDValidationViewableLarge
+		ENUM_PARAMETERS.add(0x067b82d8, "validation_editable");		// kParameterIDValidationEditable
+		ENUM_PARAMETERS.add(0x17a1c72d, "expansionPackage");			// kParameterIDExpansionPackage
+
+		/// Creature
+		ENUM_PARAMETERS.add(0x052def3f, "speciesArchetype");			// kParameterIDCreatureSpeciesArchetype
+		ENUM_PARAMETERS.add(0x052def4b, "speciesArchetypeQuery");	// kParameterIDCreatureSpeciesArchetypeQuery
+
+		/// Vehicle
+		ENUM_PARAMETERS.add(0x0429d47d, "defense");					// kParameterIDVehicleDefense
+		ENUM_PARAMETERS.add(0x0429d47e, "speed");					// kParameterIDVehicleSpeed
+		ENUM_PARAMETERS.add(0x0429d47c, "power");					// kParameterIDVehiclePower
+		ENUM_PARAMETERS.add(0x05b950d7, "totalScore");				// kParameterIDVehicleTotalScore
+		ENUM_PARAMETERS.add(0x05c96ff0, "vehicleType");				// kParameterIDVehicleType
+
+		/// Vehicle/Building
+		// F08 Build
+		ENUM_PARAMETERS.add(0x05de94e6, "BoundingBoxX");				// kParameterIDBoundingBoxX
+		ENUM_PARAMETERS.add(0x05de94e7, "BoundingBoxY");				// kParameterIDBoundingBoxY
+		ENUM_PARAMETERS.add(0x05de94e8, "BoundingBoxZ");				// kParameterIDBoundingBoxZ
+		ENUM_PARAMETERS.add(0x05de94e9, "BoundingBoxTotal");			// kParameterIDBoundingBoxTotal (F08)
+
+		// Release
+		ENUM_PARAMETERS.add(0x05de94ea, "BoundingBoxHeight"); 		// kParameterIDBoundingBoxMaxZ
+		ENUM_PARAMETERS.add(0x05e62409, "boundingBoxTotal");			// kParameterIDBoundingBoxTotal
+
+		// Adventure
+		ENUM_PARAMETERS.add(0x15e8afc8, "completed");				// kParameterIDAdventureCompleted (in Space Stage?)
+		ENUM_PARAMETERS.add(0xb91fba14, "cannotEdit");				// kParameterIDAdventureCannotEdit
+		ENUM_PARAMETERS.add(0xd22f5e35, "hasMissingAsset");			// kParameterIDAdventureMissingAsset
+		ENUM_PARAMETERS.add(0x5a3584a7, "avatarLocked");				// kParameterIDAdventureAvatarLocked
+		ENUM_PARAMETERS.add(0xdb4675dd, "invalidVersion");			// kParameterIDAdventureInvalidVersion
 	}
 	
 	public static final ArgScriptEnum ENUM_AMTAGS = new ArgScriptEnum();
@@ -83,6 +125,13 @@ public class SummaryFile {
 		public int tagGroup;
 		public int tagID;
 		public float value;
+	}
+
+	public static final ArgScriptEnum ENUM_CONTENTSOURCE = new ArgScriptEnum();
+	static {
+		ENUM_CONTENTSOURCE.add(0, "assembled");
+		ENUM_CONTENTSOURCE.add(1, "matched");
+		ENUM_CONTENTSOURCE.add(2, "imported");
 	}
 	
 	public final Map<Integer, Number> parameters = new LinkedHashMap<>();
@@ -163,6 +212,11 @@ public class SummaryFile {
 			if (parameterString == null) {
 				parameterString = HashManager.get().hexToString(entry.getKey());
 			}
+
+			if (parameterString == "contentSource") {
+				String enumValue = ENUM_CONTENTSOURCE.get(entry.getValue().intValue());
+				if (enumValue != null) valueString = enumValue;
+			}
 			
 			writer.command("parameter").arguments(
 					ENUM_TYPE.get(entry.getValue() instanceof Integer ? TYPE_INT : TYPE_FLOAT),
@@ -208,7 +262,10 @@ public class SummaryFile {
 				Number value;
 				int type = ENUM_TYPE.get(args, 0);
 				if (type == TYPE_INT) {
-					value = stream.parseInt(args, 2);
+					if (id != 0x05dc0b88) value = stream.parseInt(args, 2);
+					else {
+						value = ENUM_CONTENTSOURCE.get(args.get(2));
+					}
 				}
 				else {
 					value = stream.parseFloat(args, 2);
